@@ -1,0 +1,116 @@
+$l_grey: #EFECEC
+$d_grey: #D0CDCD
+$white: #FFFFFF
+$dd_grey: #757474
+$ddd_grey: #252525
+header
+	width: 100%
+.row
+	margin: 0
+	padding: 0
+.logo
+	position: absolute
+	height: 5vh
+	width: 100%
+	padding: 0
+	margin-top: 50px
+	z-index: 999
+	&>.row
+		height: inherit
+		width: 100%
+		&>.col-md-6
+			height: inherit
+			display: flex
+			align-items: center
+			font-family: 'Kaushan Script', cursive
+			.logotype
+				color: $white
+				font-size: 8vh
+				margin-left: 10%
+			.ms_lines_closed
+				margin-left: 80%
+				height: 4vh
+				width: 4vh
+				display: flex
+				flex-wrap: wrap
+				justify-content: flex-end
+				.sw-1,.sw-2,.sw-3,.sw-4
+					height: 2px
+					width: 100%
+					background-color: $white
+					padding: 0
+					margin: 0
+					transition: .6s
+				.sw-1
+					transform: rotate(-45deg)
+					margin-top: 10px
+					height: 2px
+				.sw-2
+					display: none
+				.sw-3
+					display: none
+				.sw-4
+					width: 100% 
+					transform: rotate(45deg)
+					margin-top: -10px
+					height: 2px
+			.sw-all
+				margin-left: 80%
+				height: 4vh
+				width: 4vh
+				display: flex
+				flex-wrap: wrap
+				justify-content: flex-end
+				.sw-1,.sw-2,.sw-3,.sw-4
+					height: 2px
+					width: 100%
+					background-color: $white
+					padding: 0
+					margin: 0
+					transition: .6s
+				.sw-2
+					width: 80%
+				.sw-3
+					width: 70%
+				.sw-4
+					width: 90%
+.content>img
+	width: 100%
+	position: fixed
+.side-menu
+	height: 20vh
+	width: 20%
+	left: 77%
+	top: 70px
+	background-color: #fff
+	padding: 0
+	margin: 0
+	opacity: 0
+	.side-list
+		display: flex
+		flex-wrap: wrap
+		height: 20vh
+		text-decoration: none
+		list-style-type: none
+		margin: 0
+		padding: 0
+		align-items: center
+		&>li
+			width: 100%
+			display: flex
+			justify-content: flex-end
+			padding-right: 30px
+			font-family: 'Kaushan Script', cursive
+			a
+				text-decoration: none
+				color: $dd_grey
+				&:hover
+					color: $ddd_grey
+.photos
+	position: absolute
+.tz-gallery>.row
+	margin-top: 59%
+
+
+
+

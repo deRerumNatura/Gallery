@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Freebie: 4 Bootstrap Gallery Templates</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn	js.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+	<link rel="stylesheet" href="prod_css/main_prod.css">
+	<script src="https://use.fontawesome.com/38afaef021.js"></script>
+	<script
+	src="http://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container logo">
+			<div class="row">
+				<div class="col-md-6 col-xs-6 header-line">
+					<span class="logotype">Mark's</span>
+				</div>
+				<div class="col-md-6 col-xs-6 switcher">
+					<div id="menu_switcher" class="sw-all">
+						<div class="sw-1"></div>
+						<div class="sw-2"></div>
+						<div class="sw-3"></div>
+						<div class="sw-4"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row side-row">
+				<div id="side-bar" class="col-md-12 col-xs-12 side-menu">
+					<ul class="side-list">
+						<li><a href="">	test 1</a></li>
+						<li><a href="">	test 2</a></li>
+						<li><a href="">	test 3</a></li>
+						<li><a href="">	test 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<img src="img/header.jpeg" alt="">
+	</div>
+	<section class="photos">
+		<div class="tz-gallery">
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+					<a class="lightbox" href="img/bridge.jpg">
+						<img src="img/bridge.jpg" alt="Bridge">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a class="lightbox" href="img/park.jpg">
+						<img src="img/park.jpg" alt="Park">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a class="lightbox" href="img/tunnel.jpg">
+						<img src="img/tunnel.jpg" alt="Tunnel">
+					</a>
+				</div>
+				<div class="col-sm-12 col-md-8">
+					<a class="lightbox" href="img/traffic.jpg">
+						<img src="img/traffic.jpg" alt="Traffic">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a class="lightbox" href="img/coast.jpg">
+						<img src="img/coast.jpg" alt="Coast">
+					</a>
+				</div> 
+				<div class="col-sm-6 col-md-4">
+					<a class="lightbox" href="img/rails.jpg">
+						<img src="img/rails.jpg" alt="Rails">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+	baguetteBox.run('.tz-gallery');
+</script>
+<script src="js/switcher.js"></script>
+</body>
+</html>
