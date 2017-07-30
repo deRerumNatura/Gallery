@@ -10,7 +10,7 @@ header
 	padding: 0
 .logo
 	position: absolute
-	height: 5vh
+	height: 20vh
 	width: 100%
 	padding: 0
 	margin-top: 50px
@@ -25,15 +25,14 @@ header
 			font-family: 'Kaushan Script', cursive
 			.logotype
 				color: $white
-				font-size: 8vh
+				font-size: 15vh
 				margin-left: 10%
+				width: 100%
 			.ms_lines_closed
 				margin-left: 80%
-				height: 50%
-				width: 7%
-				display: flex
-				flex-wrap: wrap
-				justify-content: flex-end
+				height: 40px
+				width: 40px
+				display: block
 				.sw-1,.sw-2,.sw-3,.sw-4
 					height: 2px
 					width: 100%
@@ -42,32 +41,28 @@ header
 					margin: 0
 					transition: .6s
 				.sw-1
-					transform: rotate(-45deg)
-					margin-top: 10px
-					height: 2px
-					width: 100% 
+					opacity: 0
+					left: 40px
 				.sw-2
-					display: none
+					width: 100% 
+					transform: rotate(-45deg)
 				.sw-3
-					display: none
-				.sw-4
 					width: 100% 
 					transform: rotate(45deg)
-					margin-top: -5px
-					height: 2px
+				.sw-4
+					opacity: 0
+					left: -40px
 			.sw-all
 				margin-left: 80%
-				height: 50%
-				width: 7%
-				display: flex
-				flex-wrap: wrap
-				justify-content: flex-end
+				height: 40px
+				width: 40px
+				display: block
 				.sw-1,.sw-2,.sw-3,.sw-4
 					height: 2px
 					width: 100%
 					background-color: $white
 					padding: 0
-					margin: 0
+					margin: 0.5vh 0 0 0
 					transition: .6s
 				.sw-2
 					width: 80%
@@ -111,6 +106,8 @@ header
 	position: absolute
 .tz-gallery>.row
 	margin-top: 59%
+
+
 
 
 

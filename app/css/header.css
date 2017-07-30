@@ -9,7 +9,7 @@ header {
 
 .logo {
   position: absolute;
-  height: 5vh;
+  height: 20vh;
   width: 100%;
   padding: 0;
   margin-top: 50px;
@@ -30,17 +30,16 @@ header {
 
 .logo > .row > .col-md-6 .logotype {
   color: #FFFFFF;
-  font-size: 8vh;
+  font-size: 15vh;
   margin-left: 10%;
+  width: 100%;
 }
 
 .logo > .row > .col-md-6 .ms_lines_closed {
   margin-left: 80%;
-  height: 50%;
-  width: 7%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  height: 40px;
+  width: 40px;
+  display: block;
 }
 
 .logo > .row > .col-md-6 .ms_lines_closed .sw-1, .logo > .row > .col-md-6 .ms_lines_closed .sw-2, .logo > .row > .col-md-6 .ms_lines_closed .sw-3, .logo > .row > .col-md-6 .ms_lines_closed .sw-4 {
@@ -53,34 +52,30 @@ header {
 }
 
 .logo > .row > .col-md-6 .ms_lines_closed .sw-1 {
-  transform: rotate(-45deg);
-  margin-top: 10px;
-  height: 2px;
-  width: 100%;
+  opacity: 0;
+  left: 40px;
 }
 
 .logo > .row > .col-md-6 .ms_lines_closed .sw-2 {
-  display: none;
+  width: 100%;
+  transform: rotate(-45deg);
 }
 
 .logo > .row > .col-md-6 .ms_lines_closed .sw-3 {
-  display: none;
+  width: 100%;
+  transform: rotate(45deg);
 }
 
 .logo > .row > .col-md-6 .ms_lines_closed .sw-4 {
-  width: 100%;
-  transform: rotate(45deg);
-  margin-top: -5px;
-  height: 2px;
+  opacity: 0;
+  left: -40px;
 }
 
 .logo > .row > .col-md-6 .sw-all {
   margin-left: 80%;
-  height: 50%;
-  width: 7%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  height: 40px;
+  width: 40px;
+  display: block;
 }
 
 .logo > .row > .col-md-6 .sw-all .sw-1, .logo > .row > .col-md-6 .sw-all .sw-2, .logo > .row > .col-md-6 .sw-all .sw-3, .logo > .row > .col-md-6 .sw-all .sw-4 {
@@ -88,7 +83,7 @@ header {
   width: 100%;
   background-color: #FFFFFF;
   padding: 0;
-  margin: 0;
+  margin: 0.5vh 0 0 0;
   transition: .6s;
 }
 
