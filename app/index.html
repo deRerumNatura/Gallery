@@ -11,9 +11,9 @@
 	<link rel="stylesheet" href="prod_css/main_prod.css">
 	<script src="https://use.fontawesome.com/38afaef021.js"></script>
 	<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+	src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
 	<!-- <script
 	src="http://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -27,12 +27,19 @@
 				<div class="col-md-6 col-xs-6 header-line">
 					<span class="logotype">Mark's</span>
 				</div>
-				<div class="col-md-6 col-xs-6 switcher">
-					<div id="menu_switcher" class="sw-all">
-						<div class="sw-1"></div>
-						<div class="sw-2"></div>
-						<div class="sw-3"></div>
-						<div class="sw-4"></div>
+				<div class="col-md-6 col-xs-6">
+					<div class="sw_cher">
+						<div class="menu-icon" id="menu_switcher">
+							<div class="sw-all">
+								<div class="line-1 lines"></div>
+							</div>
+							<div class="sw-all">
+								<div class="line-2 lines"></div>
+							</div>
+							<div class="sw-all">
+								<div class="line-3 lines"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -92,7 +99,7 @@
 <script>
 	baguetteBox.run('.tz-gallery');
 </script>
-<script>
+<!-- <script>
 	$( document ).ready(function() {
 	var menu = $('.side-menu'); 
 	var lines = $('.sw-all');
@@ -100,17 +107,17 @@
 $('#menu_switcher').click(function(){
 		if(menu.css("opacity") < '0.8') {
 			menu.animate({"opacity": '0.8', "top": '10px'}, 500);
-			lines.addClass('ms_lines_closed');
 			lines.removeClass('sw-all');
+			lines.addClass('ms_lines_closed');
 		}
 		else {
 			menu.animate({"top": '50px', "opacity": '0'}, 400);	
-			lines.removeClass('ms_lines_closed');
 			lines.addClass('sw-all');
+			lines.removeClass('ms_lines_closed');
 		}
 	});
 });
-</script>
-<!-- <script src="js/switcher.js"></script> -->
+</script> -->
+<script src="js/switcher.js"></script>
 </body>
 </html>
