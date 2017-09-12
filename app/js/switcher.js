@@ -9,8 +9,8 @@ $('#menu_switcher').click(function(){
 			menu.animate({"opacity": '0.8', "top": '10px'}, 500);
 		}
 		else {
-			lines.addClass('sw-all');
 			lines.removeClass('ms_lines_closed');
+			lines.addClass('sw-all');
 			menu.animate({"top": '50px', "opacity": '0'}, 400);	
 		}
 	});

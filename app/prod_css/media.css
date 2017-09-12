@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  .sw_cher .menu-icon .ms_lines_closed {
+    width: 30px;
+    height: 7px;
+  }
+  .sw_cher .menu-icon .ms_lines_closed .lines {
+    height: 2px;
+    width: 30px;
+  }
+  .sw_cher .menu-icon {
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  span.logotype {
+    font-size: 75px;
+  }
+}

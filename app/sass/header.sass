@@ -1,3 +1,26 @@
+// $small: 320px;
+// $large: 1024px;
+
+// @mixin respond-to($media) {
+// 	@if $media == handhelds {
+// 		@media only screen and (max-width: $small) { @content; }
+// 	}
+// 	@else if $media == medium-screens {
+// 		@media only screen and (min-width: $small + 1) and (max-width: $large - 1) { @content; }
+// 	}
+// 	@else if $media == wide-screens {
+// 		@media only screen and (min-width: $large) { @content; }
+// 	}
+// }
+
+// .logotype {
+// 	float: left;
+// 	width: 150px;
+// 	@include respond-to(handhelds) { width: 100% ;}
+// 	@include respond-to(medium-screens) { width: 125px; }
+// 	@include respond-to(wide-screens) { float: none; }
+// }​
+
 $l_grey: #EFECEC
 $d_grey: #D0CDCD
 $white: #FFFFFF
@@ -25,66 +48,15 @@ header
 			font-family: 'Kaushan Script', cursive
 			.logotype
 				color: $white
-				font-size: 15vh
+				font-size: 120px
 				margin-left: 10%
 				width: 100%
-			// .ms_lines_closed
-			// 	margin-left: 80%
-			// 	width: 50px 
-			// 	height: 50px
-			// 	position: absolute
-			// 	right: 10px
-			// 	top: 0
-			// 	display: flex
-			// 	align-items: center
-			// 	justify-content: center
-			// 	.sw-1,.sw-2,.sw-3,.sw-4
-			// 		height: 2px
-			// 		width: 100%
-			// 		background-color: $white
-			// 		transition: .6s
-			// 		position: absolute
-			// 	.sw-2
-			// 		opacity: 0
-			// 	.sw-3
-			// 		top: 22px
-			// 		transform: rotate(-45deg)
-			// 	.sw-1 
-			// 		top: 12px
-			// 		transform: rotate(45deg)
-			// .sw-all
-			// 	// margin-left: 80%
-			// 	// height: 25px
-			// 	// width: 33px
-			// 	// position: absolute
-			// 	// cursor: pointer
-			// 	// display: block
-			// 	width: 50px 
-			// 	height: 50px
-			// 	position: absolute
-			// 	right: 10px
-			// 	top: 0
-			// 	display: flex
-			// 	align-items: center
-			// 	justify-content: center
-			// 	word-wrap: wrap
-			// 	.sw-1,.sw-2,.sw-3
-			// 		height: 2px
-			// 		width: 100%
-			// 		background-color: $white
-			// 		transition: .6s
-			// 		position: absolute
-			// 	.sw-2
-			// 		// width: 80%
-			// 	.sw-3
-			// 		// width: 70%
 .content>img
 	width: 100%
 	position: fixed
 .side-menu
 	height: 20vh
-	width: 20%
-	left: 77%
+	width: 100%
 	top: 70px
 	background-color: #fff
 	padding: 0
@@ -92,7 +64,6 @@ header
 	opacity: 0
 	.side-list
 		display: flex
-		flex-wrap: wrap
 		height: 20vh
 		text-decoration: none
 		list-style-type: none
@@ -102,9 +73,12 @@ header
 		&>li
 			width: 100%
 			display: flex
-			justify-content: flex-end
+			justify-content: center
 			padding-right: 30px
 			font-family: 'Kaushan Script', cursive
+			border-right: $dd_grey 2px dashed
+			align-items: center
+			height: 100%
 			a
 				text-decoration: none
 				color: $dd_grey
@@ -120,57 +94,44 @@ header
 	display: flex
 	justify-content: flex-end
 	.menu-icon
-		height: 70%
-		width: 14vh
+		height: 50px
+		width: 50px
 		display: flex
 		flex-wrap: wrap
 		align-items: center
 		.sw-all
 			height: 4px
-			width: 100%
+			width: 50px
 			display: flex
 			flex-wrap: wrap
 			align-items: center
 			.lines
-				background-color: $d_grey
+				background-color: $white
 				height: 4px
-				width: 20vh
+				width: 50px
 				transition: .6s
 		.ms_lines_closed
 			height: 4px
-			width: 100%
+			width: 50px
 			display: flex
 			flex-wrap: wrap
 			align-items: centers
 			.lines
-				background-color: $d_grey
+				background-color: $white
 				height: 4px
-				width: 20vh
+				width: 50px
 				transition: .6s
+				position: absolute
 			.line-1
 				transform: rotate(45deg)
-				margin-top: 16%
-				// transition: .6s
+			.line-1
+				top: 15px
 			.line-2
 				opacity: 0
 			.line-3
-				transform: rotate(-45deg)
-				margin-top: -50%
-				// transition: .6s
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				top: 15px
+				transform: rotate(135deg)
+.side-row
+	position: absolute
+	top: 100px
 

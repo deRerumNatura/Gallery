@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+  .sw_cher .menu-icon .ms_lines_closed {
+    width: 40px;
+    height: 7px;
+  }
+  .sw_cher .menu-icon .ms_lines_closed .lines {
+    height: 3px;
+    width: 40px;
+  }
+  .sw_cher .menu-icon {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sw_cher .menu-icon .sw-all {
+    width: 40px;
+    height: 7px;
+  }
+  .sw_cher .menu-icon .sw-all .lines {
+    height: 3px;
+    width: 40px;
+  }
+  .sw_cher .menu-icon {
+    height: 30px;
+    position: absolute;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo > .row > .col-md-6 span.logotype {
+    font-size: 75px;
+    bottom: 45px;
+    right: -17px;
+    position: absolute;
+  }
+}
